@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MM Edulogix | Smart School Management & School Card Scanner</title>
+
+    <meta name="description" content="Simplify school administration with MM Edulogix. Manage student records, digital ID cards, QR and RFID attendance, teachers, classes and school reports in one organized system.">
+
+    <meta name="keywords" content="MM Edulogix, School Management System, School Card Scanner, Online Attendance System, Student Management, QR Attendance, RFID Attendance">
+
+    <meta name="author" content="MM Edulogix">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <script src="{{ url_for('static', filename='js/site.js') }}"
+            defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container navbar">
+
+            <a href="/" class="logo">
+                MM <span>Edulogix</span>
+            </a>
+
+            <button class="menu-toggle"
+                    type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="nav-links">
+
+                <a href="#home">Home</a>
+
+                <a href="#about">About</a>
+
+                <a href="{{ url_for('privacy_policy') }}">
+                    Privacy Policy
+                </a>
+
+                <a href="{{ url_for('terms') }}">
+                    Terms &amp; Conditions
+                </a>
+
+                <a href="{{ links.teacher_login }}"
+                   class="teacher-nav">
+                    Teacher Login
+                </a>
+
+                <a href="{{ links.school_login }}">
+                    School Login
+                </a>
+
+                <a href="{{ links.register }}"
+                   class="register-nav">
+                    Register School
+                </a>
+
+                <a href="{{ links.demo }}">
+                    Free Demo
+                </a>
+
+                <a href="{{ url_for('contact') }}">
+                    Contact
+                </a>
+
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <span class="hero-label">
+                        SMART SCHOOL MANAGEMENT
+                    </span>
+
+                    <h1>
+                        Less Paperwork.
+                        <span>Smarter Attendance.</span>
+                        Better School Management.
+                    </h1>
+
+                    <h2 class="hero-subtitle">
+                        MM Edulogix — Smart School Management
+                        &amp; School Card Scanner System
+                    </h2>
+
+                    <p>
+                        Give your school a smarter way to manage
+                        everyday operations. From student admissions
+                        and digital ID cards to QR and RFID attendance,
+                        teacher management, class records and detailed
+                        reports — bring essential school activities
+                        together in one organized system.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="{{ links.register }}"
+                           class="btn btn-primary btn-register">
+                            Register School
+                        </a>
+
+                        <a href="{{ links.demo }}"
+                           class="btn btn-outline btn-demo">
+                            Explore Free Demo
+                        </a>
+
+                    </div>
+
+                    <div class="hero-trust">
+                        A connected approach to modern school administration.
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FEATURES SECTION -->
+        <section class="features-section" id="features">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        ONE CONNECTED PLATFORM
+                    </span>
+
+                    <h2>
+                        Everything Your School Needs.
+                        All in One Place.
+                    </h2>
+
+                    <p>
+                        Manage the essential parts of school
+                        administration with tools designed to
+                        organize daily work and simplify operations.
+                    </p>
+
+                </div>
+
+
+                <div class="features-grid">
+
+                    <article class="feature-card">
+                        <div class="feature-icon">01</div>
+                        <h3>Student Registration</h3>
+                        <p>
+                            Register students and maintain their
+                            profiles, admission details and records
+                            in an organized system.
+                        </p>
+                    </article>
+
+
+                    <article class="feature-card">
+                        <div class="feature-icon">02</div>
+                        <h3>Digital Student ID Cards</h3>
+                        <p>
+                            Create student identity cards with
+                            essential student information and
+                            scanning support.
+                        </p>
+                    </article>
+
+
+                    <article class="feature-card">
+                        <div class="feature-icon">03</div>
+                        <h3>QR &amp; RFID Attendance</h3>
+                        <p>
+                            Support modern attendance workflows
+                            using QR codes and compatible RFID
+                            technology.
+                        </p>
+                    </article>
+
+
+                    <article class="feature-card">
+                        <div class="feature-icon">04</div>
+                        <h3>Daily Attendance</h3>
+                        <p>
+                            Organize daily attendance records and
+                            track student attendance status
+                            class by class.
+                        </p>
+                    </article>
+
+
+                    <article class="feature-card">
+                        <div class="feature-icon">05</div>
+                        <h3>Class Management</h3>
+                        <p>
+                            Organize classes, manage class lists
+                            and keep student information
+                            structured.
+                        </p>
+                    </article>
+
+
+                    <article class="feature-card">
+                        <div class="feature-icon">06</div>
+                        <h3>Teacher Management</h3>
+                        <p>
+                            Manage teacher registration and
+                            provide access through teacher
+                            accounts and permissions.
+                        </p>
+                    </article>
+
+
+                    <article class="feature-card">
+                        <div class="feature-icon">07</div>
+                        <h3>Teacher Attendance</h3>
+                        <p>
+                            Keep teacher attendance information
+                            organized alongside school
+                            administration records.
+                        </p>
+                    </article>
+
+
+                    <article class="feature-card">
+                        <div class="feature-icon">08</div>
+                        <h3>Student Progress &amp; Promotion</h3>
+                        <p>
+                            Maintain student progression
+                            information and organize class
+                            promotion records.
+                        </p>
+                    </article>
+
+
+                    <article class="feature-card">
+                        <div class="feature-icon">09</div>
+                        <h3>Reports &amp; Insights</h3>
+                        <p>
+                            Access attendance summaries and
+                            school records to understand
+                            everyday school activities.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section" id="about">
+
+            <div class="container">
+
+                <div class="about-content">
+
+                    <span class="section-label">
+                        ABOUT MM EDULOGIX
+                    </span>
+
+                    <h2>
+                        A More Organized Way to Run Your School.
+                    </h2>
+
+                    <p>
+                        MM Edulogix brings important school
+                        administration activities into a connected
+                        digital environment. It helps schools
+                        organize student information, attendance,
+                        teacher access, classes and reports through
+                        a structured management system.
+                    </p>
+
+                    <p>
+                        Our goal is to make everyday school
+                        administration clearer, more organized
+                        and easier to manage.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FINAL CALL TO ACTION -->
+        <section class="cta-section">
+
+            <div class="container">
+
+                <span class="section-label">
+                    START WITH MM EDULOGIX
+                </span>
+
+                <h2>
+                    Take the Next Step Towards Smarter
+                    School Management.
+                </h2>
+
+                <p>
+                    Explore the system and discover how digital
+                    school management can support your
+                    school's everyday activities.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="{{ links.demo }}"
+                       class="btn btn-outline btn-demo">
+                        Explore Free Demo
+                    </a>
+
+                    <a href="{{ links.register }}"
+                       class="btn btn-primary btn-register">
+                        Register Your School
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+
+                    <h3>
+                        MM <span>Edulogix</span>
+                    </h3>
+
+                    <p>
+                        Smart School Management &amp;
+                        School Card Scanner System.
+                        Bringing school administration
+                        into a more organized digital environment.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="#home">Home</a>
+
+                    <a href="#about">About</a>
+
+                    <a href="{{ url_for('privacy_policy') }}">
+                        Privacy Policy
+                    </a>
+
+                    <a href="{{ url_for('terms') }}">
+                        Terms &amp; Conditions
+                    </a>
+
+                    <a href="{{ url_for('contact') }}">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 MM Edulogix.
+                    All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
